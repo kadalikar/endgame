@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+ <link rel= "https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="img/jpg" href=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/17.jpg"/>
+  <title>Avengers End Game</title>
+</head>
+
+<body>
+<style>
+.navbar.nav-link 
+  {
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+  }
+
+  .navbar .nav-item.active
+  {
+      border-left:gold 3px solid ;
+  }
+
+
+  .carousel-item {
+    height: 700px;
+  }
+  
+  .carousel-image-1 {
+    background: url(' https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/1000.jpg ');
+    background-size: cover;
+  }
+  /* .carousel-image-2 {
+    background: url('https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/2.jpg');
+    background-size: cover;
+  }
+  .carousel-image-3 {
+    background: url('https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/4.jpg');
+    background-size: cover;
+  } */
+
+
+
+  #home-heading {
+      position:relative;
+      min-height: 200px;
+      background:url('https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/10.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      text-align:center;
+      color:rgb(163, 233, 0);
+  }
+
+  
+  .dark-overlay {
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+     
+  }
+ 
+
+  #video-play {
+    position: relative;
+    min-height:200px;
+    background:url('https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/13.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0  350px;
+    text-align: center;
+    color: rgb(202, 74, 14);
+  }
+
+  #video-play a {
+    bottom: 20px;
+    color: rgb(27, 27, 14);
+  }
+
+
+
+  #page-header
+  {
+    height: 210px;
+    background: url(' https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/9.jpg');
+    background-position: 0 -300px;
+    background-attachment: fixed;
+    color: rgb(226, 218, 213);
+    border-bottom: 1px rgb(230, 181, 181) solid;
+    padding-top: 20px;
+    background-repeat:none;
+
+  }
+  .about-img
+  {
+    margin-top: 50px;
+  }
+  p{
+    color: rgb(116, 114, 41);
+    position: left;
+  }
+  #faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}.nav__logo {
+    height: 4.5rem;
+    transition: all 0.3s;
+  }
+
+
+
+
+</style>
+
+
+
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <img src="https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/70.jpg" class="nav__logo"
+        id="logo">
+    <div class="container">
+      <a href="home.html" class="navbar-brand"> Avengers</a>
+      <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="service.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+   <section id="showcase">
+      <div id="mycarousel" class="carousel slide"  data-ride="carousel">
+       <ol class="carousel-indicators"> 
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+    </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active">
+              <div class="container">
+                  <div class="carousel-caption d-none d-md-block text-right mb-6">
+                    <h1 class="display-3">  </h1>
+                    <p class="lead"></p>
+                    <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- <div class="carousel-item carousel-image-2">
+            <div class="container">
+                <div class="carousel-caption d-none d-md-block   mb-6">
+                  <h1 class="display-3">  </h1>
+                  <p class="lead"></p>
+                  <a href="#" class="btn btn-dark btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="carousel-item carousel-image-3">
+            <div class="container">
+                <div class="carousel-caption d-none d-md-block text-right mb-6">
+                  <h1 class="display-3"> </h1>
+                  <p class="lead"></p>
+                  <a href="#" class="btn btn-danger btn-lg"> Learn More</a>
+                </div>
+            </div>
+        </div> -->
+      </div>
+
+      <a href="#mycarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#mycarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      </div>
+  </section>
+
+
+
+
+   <section id="home-icons" class="py-5">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4 mb-4 text-centre">
+                <img src="  https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/808.jpg">
+                
+                <h3>Thanos</h3>
+                <p>Thanos is a fictional supervillain appearing in American comic books published by Marvel Comics.   with many heroes including the Avengers, the Guardians of the Galaxy, the Fantastic Four, and the X-Men.</p>
+            </div>
+                    <div class="col-md-4 mb-4 text-centre">
+                        
+                        <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/809.jpg">
+                    <h3>Ultron</h3>
+                    <p>Ultron is a fictional supervillain appearing in American comic books published by  Ultron's goal to destroy humanity has brought him into conflict with the Avengers, </p>
+                </div>   
+                
+                <div class="col-md-4 mb-4 text-centre">
+
+                      <img src="  https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/810.jpg">
+                    <h3>Loki</h3>
+                    <p>Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of "Avengers: Endgame."</p>
+                   </div>
+           </div>
+       </div>
+   </section>
+
+
+   <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Are You Ready for End Game</h1>
+            <p class="d-none d-md-block"> Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-centre">
+          <h3>HEROS</h3>
+          <p>
+            In the Ultimate Marvel Universe, the Avengers are named the Ultimates, and were formed by General Nicholas Fury to protect America against superhuman threats. They first appeared in The Ultimates by Mark Millar and Bryan Hitch. ... A Black Ops team called the Avengers debuted sometime after the Ultimatum storyline.
+          </p>
+          <a href="home.html" class="btn btn-outline-dark btn-lg">learn more</a>
+        </div>
+        <div class="col-md-6">
+          <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/11.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="video-play">
+   <div class="dark-overlay">
+     <div class="row">
+       <div class="col">
+         <div class="container p-5">
+           <a href="#" class="video" data-video=" https://www.youtube.com/embed/lHw-6AZvZ7I" data-toggle="modal" 
+           data-target="#videoModal">
+           <i class="fas fa-play fa-4x"></i>
+           </a>
+            <h1>See What We Do</h1>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
+<!-- photogallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">Photo Gallery</h1>
+      <p class="text-center">check out our photos</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="560" data-weight="560">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/19.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+
+
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="561" data-weight="561">
+            <img src= " https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/20.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="562" data-weight="562">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/23.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="563" data-weight="563">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/21.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="564" data-weight="564">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/26.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/15.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/18.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/25.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/24.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/14.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/16.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/22.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="home.html" data-toggle="light-box" data-gallery="img-gallery"
+              data-height="565" data-weight="565">
+            <img src=" https://avengersbucketimg.s3.ap-south-1.amazonaws.com/images/img/32.jpg" alt="" class="img-">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+     <section id="newsletter" class="text-center p-5 bg-dark text-white">
+     <div class="container">
+       <div class="row">
+         <div class="col">
+           <h1>Sign Up for our Website</h1>
+           <p></p>
+           <form class="form-inline justify-content-center">
+             <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+             <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+             <button class="btn btn-primary mb-2">submit</button>
+           </form>
+         </div>
+       </div>
+     </div>
+     </section>
+
+
+<footer id="main-footer" class="text-center p-4">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i>copyright &copy;<span id="year"></span> Avengers</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close"
+          data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        <iframe src="" frameborder="0"
+        height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<!--   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script> -->
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+
+<script>
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+
+  // // Configure Slider
+  // $('.carousel').carousel({
+  //   interval: 6000,
+  //   pause: 'hover'
+  // });
+
+  // Lightbox Init
+  $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
+  // Video Play
+  $(function () {
+    // Auto play modal video
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+
+</html>
